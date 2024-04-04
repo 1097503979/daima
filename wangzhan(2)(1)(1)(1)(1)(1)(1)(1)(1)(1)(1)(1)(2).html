@@ -1,0 +1,283 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            a:link, a:visited {
+                color: #90EE90; /* 淡绿色 */
+            }
+            body {
+                background: rgb(40, 44, 52); /* 背景颜色 */
+                color: rgb(171, 178, 191); /* 文字颜色 */
+                text-shadow: rgba(0, 0, 0, 0.3) 0px 1px; /* 文字阴影 */
+                font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace; /* 字体 */                    direction: ltr; /* 文本方向 */
+                text-align: left; /* 文本对齐方式 */
+            }
+            .tooltip {
+                position: relative; /* 设置定位为相对 */
+                cursor: help; /* 鼠标悬停时显示帮助图标 */
+            }
+            .tooltip::after {
+                content: attr(data-tooltip);
+                position: absolute;
+                left: 100%;
+                top: 0;
+                white-space: nowrap; /* 保留换行符 */
+                background-color: rgb(40, 44, 52);
+                border: 1px solid #ccc;
+                padding: 5px;
+                border-radius: 4px;
+                color: #90EE90;
+                z-index: 1;
+                margin-left: 10px;
+                margin-top: -5px;
+                display: none;
+            }
+            .tooltip:hover::after {
+                display: block; /* 鼠标悬停时显示 */
+            }
+        </style>
+    <script>
+        function playVideoLoop(url, times) {
+            var video = document.createElement('video');
+            video.src = url;
+            video.preload = 'metadata'; // 预加载元数据，以便快速开始播放
+            video.autoplay = true; // 自动播放视频
+            video.loop = false; // 不自动循环视频
+        
+            var count = 0;
+        
+            video.addEventListener('ended', function() {
+                count++;
+                if (count < times) {
+                    video.play();
+                } else {
+                    // 可以选择是否要停止视频
+                    // video.pause();
+                    // video.src = ''; // 清空视频源，防止再次点击时继续播放
+                }
+            });
+        
+            document.body.appendChild(video); // 将视频元素添加到页面中
+            video.play();
+        }
+        
+    </script>
+    </head>
+    
+    <body>
+        <p>夜曲编程是一个在线学习编程的网站，发布了
+            <a href="file:///C:/Users/Administrator/Desktop/bbb.html">学习编程</a>
+            、<span>数据分析基础</span>、<span>数据分析进阶</span>、<span>网络爬虫</span>、<span>网页开发基础</span>等课程。</p>
+    
+        <p><a href="https://www.huya.com/">虎牙直播</a> <a href="https://qinqi.chatmindai.net">ai</a> <a href="https://x.chatmindai.net">官网</a> <a href="https://www.douyin.com/search/%E5%B0%8F%E8%83%96%E6%A2%A8%E8%80%B6?aid=5a529383-5554-4469-90a5-03fdc1936747&publish_time=0&sort_type=0&type=general">小胖梨耶</a>
+            <a href="https://www.huya.com/28580562">呆妹</a> <a href="https://www.huya.com/ye4655">树叶</a> <a href="https://www.huya.com/135471">汤圆</a>
+            <a href="https://www.douyin.com/user/MS4wLjABAAAA449ZQ-goWUfxa7Su3BkX16FRx0WhAf8xmnSEPtE-XJk">灯笼老奶奶</a> <a href="https://www.douyin.com/user/MS4wLjABAAAA449ZQ-goWUfxa7Su3BkX16FRx0WhAf8xmnSEPtE-XJk?modal_id=7344737800861814070">灯笼1</a>
+            <a href="https://www.douyin.com/user/MS4wLjABAAAAb1br7QGQSYiA80_mohzI0VDiHp-Ex9kg_XvvkfOm-aE">小汪同学</a> <a href="https://www.douyin.com/user/MS4wLjABAAAAuO4_ktwreZ18wYUrOMF3yOd5cFBkgGDcRkNlYdfXOcFPnXYAhGo6CMB0JbqTjSKI?vid=7346548369403251978">坤坤绿绿</a>
+            <a href="https://www.douyin.com/user/MS4wLjABAAAA_Oedd6CN-W9Lh1nfF6RmkZb-Jur_hfgTHtYRVoxjpGY">媚娘</a> <a href="https://www.douyin.com/user/MS4wLjABAAAAQkLk6441VZzm7rwlydg9BCiSuvK5p_H8d6Y0rOP76JH6ofLV4tMPK_izzSk6m02S">小穗子</a>
+            <a href="https://www.douyin.com/user/MS4wLjABAAAA9GharpAl2p9Yd5ENK1dYrHR2aa9lZCKdCbb8qhcgwUw">疯狂特效师</a> <a href="https://www.douyin.com/user/MS4wLjABAAAApXDoouq67aFo_EYo-Co-8hPrL5n01WgHH_socLa37dysgKP6J0VxWV6ZRdJ97toA">情感锦囊</a> 
+            <a href="https://live.douyin.com/940939344653">七彩猫直播</a> 
+            <a href="https://www.douyin.com/user/MS4wLjABAAAA7ibQeZtOxOl7-kTSNcMmiExHasU18SSVaIwEJRRvLsnLOiLilRFr2jw5EWH2lchM">七彩猫</a> 
+            <a href="https://19x19.com/engine/index">星阵</a> 
+            <a href="https://kimi.moonshot.cn/">kimi</a> 
+            <a href="https://np.baicizhan.com/">百职帮</a> 
+            <a href="https://www.doubao.com/">豆包</a> 
+            <a href="https://www.zhihu.com/education/learning">知学堂</a> 
+            <a href="https://www.bilibili.com/">b站</a> 
+            <a href="https://mytwins.ai/">数字分身</a> 
+            <a href="https://www.weaver.com.cn/new/product/xinchuang/index.html?source=19&kw=xinchuang-230928-pc-167&bd_vid=10455239040846837516">信创</a> 
+            <a href="https://www.aliyun.com/product/bigdata/learn">PAI平台</a> 
+            <a href="https://www.csdn.net/">csdn</a> 
+            <a href="https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Hlo472sa2">CODER-7B 千帆</a> 
+            <a href="https://dl.624down.com/IDEAs">IDEA</a> 
+            <a href="https://www.yjpoo.com/site/921.html">ChatLaw</a> 
+            <a href="https://chatglm.cn/">ChatGLM 智普清言</a> 
+            <a href="https://sf.163.com/product/lcap?fromnsf=baidu_lcap_2023042501&bd_vid=8461260314582165766">CodeWave</a> 
+            <a href="https://github.com/OpenBMB/XAgent">XAgent</a> 
+            <a href="https://help.aliyun.com/zh/pai/user-guide/dsw-overview">DSW</a> 
+            <a href="https://github.com/CLUEbenchmark/SuperCLUE">SuperCLUE</a> 
+            <a href="https://help.aliyun.com/zh/pai/user-guide/easyrec?spm=a2c4g.11186623.0.0.6b2a347dJxlsr8">EasyRec</a> 
+            <a href="https://www.aliyun.com/activity/2024purchase/bigdata_ai?utm_content=se_1016168096">大卖场</a> 
+            <a href="https://github.com/THUDM/ChatGLM2-6B">chatglm2</a> 
+            <a href="https://huggingface.co/THUDM/chatglm2-6b">HuggingFace</a> 
+            <a href="https://university.chatglm.cn/">chatglm 大学版 只能1000个字 选的其他大学</a> 
+            <a href="https://cloud.baidu.com/product/wenxinworkshop?track=646c5f4ddf2d62359f36be4c5643d46823c9506e3593d543">千帆</a> 
+            <a href="https://www.bailian-ai.com/">百炼</a> 
+            <a href="https://autogpt.cn/">AutoGPT</a> 
+            <a href="https://share.calendar.tencent.com/5ttWXa5A">课程表</a> 
+            <a href="https://learn.agiclass.ai">课程大纲</a>  
+            <a href="https://a.agiclass.ai/">安装gpt教程</a>  
+            <a href="https://devcto.com">课程赠送的 OpenAI API key</a>  
+            <a href="https://agictolab.feishu.cn/wiki/Z19mwjsx4idbKKkAF6Xcmhd9nTf/">课程赠送的 OpenAI API key</a>  
+            <a href="https://toscode.mulanos.cn/wan13877501248/y-tian-plugin">云崽</a>  
+            <a href="https://gitee.com/">Gitee</a>  
+            <a href="hua-der.com">点赞获得</a>   
+            <a href="https://www.wujiebantu.com/ai">无界消耗点数</a>   
+            <a href="https://novelai.net/">要翻墙</a>   
+            <a href="https://learncodethehardway.org/">powershell免费快速入门</a>   
+            <a href="http://notepad-plus-plus.org/">下载notepad+文本编辑器</a>   
+            <a href="https://www.midjourny.cn/?from=TBMJ12&strategy=drawing3&bd_vid=11372961581895906028">mj中文</a>   
+            <a href="V2rayN.com">v2rayN</a>   
+            <a href="hua-der.com">点赞获得</a> 
+            <a href="https://huggingface.co/THUDM/chatglm2-6b">HuggingFace</a> 
+            <a href="https://zhuanlan.zhihu.com/p/464067383">装kata</a>   
+            <a href="https://github.com/SabakiHQ/Sabaki/releases/">951211Kata sabaki</a>   
+            <a href="https://katagotraining.org/">kata英文</a>   
+            <a href="https://xiezuocat.com/">写作猫 gpt平替</a>   
+            <a href="https://n2e.io/login">Arain</a>   
+            <a href="http://chat.zemeitong.cn/draw?channel=bdtoufangztAsk3">ask ai</a>   
+            <a href="https://replika.ai/">需翻墙</a>   
+            <a href="https://www.huya.com/369714">九九纯手法</a>   
+            <a href="https://www.huya.com/24140616">知馨</a>   
+            <a href="https://www.huya.com/27836325">桃花</a>   
+            <a href="https://www.huya.com/870891">喵仙子</a>   
+            <a href="https://www.huya.com/28727612">登登呐</a>   
+            <a href="https://www.huya.com/17958745">猪妹</a>   
+            <a href="https://www.huya.com/495314">甜甜珂</a>   
+            <a href="https://www.huya.com/16507708">黄汉三老顽童</a>   
+            <a href="https://www.huya.com/27759379">何宝儿</a>   
+            <a href="https://www.huya.com/23742800">鬼畜丸家</a>   
+            <a href="https://www.huya.com/17789859">李水水</a>   
+            <a href="https://www.huya.com/125681">云姝</a>   
+            <a href="https://www.huya.com/713255">南莫</a>   
+            <a href="https://www.huya.com/27878158">hc-肉脸咸鱼 简霜 阿珂</a>   
+            <a href="https://www.huya.com/23640507">QM-阿灿 布甲韩信</a>   
+            <a href="https://www.huya.com/26085719">牛婿 亚联</a>   
+            <a href="https://www.huya.com/28645933">嘉乐 悠悠 普宁</a>   
+            <a href="https://www.huya.com/19202898">M丶甜甜 苏州</a>   
+            <a href="https://www.tabnine.com/">tabine 编码助手</a>    
+            <a href="https://bsl-supplier.car-me.com">13862098083后台供应</a>    
+            <a href="https://cn.kyligence.io/copilot/?utm_medium=baidu&utm_source=sem_pc&?utm_content=copilot&bd_vid=9356566128574059844">Copilot</a>    
+            <a href="https://code.visualstudio.com/updates/v1_87#vscode">vs更新</a>    
+            <a href="https://www.douyin.com/user/MS4wLjABAAAAK3MKlmUJgj9swPKiasaukSNidH6qdwJrul8VpQBIesDr0bWMqZAO2LuejmK-8F5Z">王墨绫子</a>       
+            <a href="https://www.tabnine.com/"></a>       
+            <a href="https://tongyi.aliyun.com/qianwen/?spm=5176.28326591.0.0.40f76ee1c6MDes&sessionId=20dd6fbcb8494ae896a82e1df277207b">通义千问</a>       
+            <a href="https://cp.iciba.com/">金山词霸</a>       
+            <a href="https://www.goratings.org/en/">围棋排名</a>       
+            <a href="https://online-go.com/learn-to-play-go">OGS</a>          
+            <a href="https://online-go.com/puzzles">死活</a>          
+            <a href="https://shimo.im/docs/B1AwdrZx7XSRyX3m/">网络爬虫-中等难度以上题解</a>          
+            <a href="https://shimo.im/docs/L9kBMWD6bYigRlqK">网络爬虫常见报错自查</a>          
+            <a href="https://shimo.im/docs/XKq42QDj5GHmYOAN/">网络爬虫-每日问题</a>          
+            <a href="https://shimo.im/docs/47kgMYx8jJtZoR3V/">编码助手</a>          
+            <a href="https://shimo.im/docs/8qqWcqAy8VE74Iou/ ">pip install xxx的问题</a>          
+            <a href="https://shimo.im/docs/T3MrcWs63G2WKaLx/ ">vscode之新建一个py并运行</a>          
+            <a href="https://www.aliyundrive.com/drive/file/backup">阿里云盘电脑手登</a>          
+            <a href="https://www.aliyundrive.com/s/JojD2pvLDch">电影1</a>          
+            <a href="https://www.aliyundrive.com/s/7WMrBVXuT8g">电影2</a>          
+            <a href="https://podcasts.apple.com/cn/podcast/pariah-no-3/id502304410?i=1000620964738">the truth</a>          
+            <a href="https://yparse.ik9.cc/index.php?spm=a2hje.13141534.0.0&url=https://v.youku.com/v_show/id_XNjM3MTczMTc3Mg==.html?source=baidu&refer=sousuotoufang_market.qrwang_00002944_000000_QJFFvi_19031900">花间令B站4</a>          
+            <a href="extension://iikmkjmpaadaobahmlepeloendndfphd/options.html#nav=aecf5e76-921b-4a1a-ab36-d1133c2fafee+editor">篡改1</a>          
+            <a href="extension://iikmkjmpaadaobahmlepeloendndfphd/options.html#nav=5a91c158-57df-4445-aa49-c1f08f6d69d3+editor">篡改2</a>          
+            <a href="https://www.en580.com/">美剧网站</a>          
+            <a href="movie.en580.com">兄弟网站</a>          
+            <a href="https://www.aliyundrive.com/s/PR3tUnXxo7C">阿里云哈利</a>          
+            <a href="https://zhengang6.codewave.163.com/dashboard/app/list">我codewave</a>           
+            <a href="https://github.com/">github</a>           
+            <a href="https://gitee.com/littlefean/english-word-sea">开源背单词</a>           
+            <a href="https://gitee.com/">gitee官网</a>           
+            <a href="https://github.com/1097503979/daima">我的github</a>           
+            <a href="https://github.com/SmartCodeSnippets/SmartPython">很多代码</a>           
+            <a href="https://bainian.chatmindai.net/">拜年模拟</a>             
+            <a href="1">编码助手</a>             
+            <a href="1">编码助手</a>             
+            <a href="1">编码助手</a>             
+            <a href="1">编码助手</a>          
+            <a href="https://www.douyin.com/user/MS4wLjABAAAA7-3eWfm_eGIySi6MstFrWelQ9CgccApRl1ukD4Y5icXpKb1Dl50BC98CRPn0uYcQ">荣宝宝</a> <a href="https://www.douyin.com/user/MS4wLjABAAAAy-vnPW_OTYj2L9AvZStMC08URGXyPF_rGiTaH_fUvts">林豆豆</a>
+        </p>
+
+        <p> <a href="D:\huiqi\yun云之羽.docx">云之羽歌 p的图</a>
+            <a href="D:\huiqi\ge.docx">p的图 402</a>
+            <a href="D:\huiqi\wangzhezhenrong.docx">模拟阵容</a>
+            <a href="D:\huiqi\shengjing.docx">一种阅读格式</a>
+            <a href="D:\huiqi\shiliu.docx">电脑生成宫殿</a>
+            <a href="D:\huiqi\yun云之羽.docx">云之羽歌</a>
+            <a href="D:\huiqi\fenxi docban.docx">让ai分析的装备</a>
+            <a href="D:\huiqi\wangzhe.docx">昭君安其拉奕星笔记</a>
+            <a href="D:\huiqi\mos.docx">芝士派听力练习法</a>
+            <a href="D:\huiqi\pengyou.docx">一周朋友圈 mj关键词</a>
+            <a href="D:\huiqi\第2周-沈振刚烈度-火灾》原文.docx">作业草稿</a>
+            <a href="D:\huiqi\第2周-沈振刚 抖音文案 《重组家庭：爱与责任的边界》.docx">作业</a>
+            <a href="D:\huiqi\bubuluo.docx">小说 工作 编辑的文档尝试智能回答</a>
+            <a href="D:\huiqi\x小说.docx">ai写葡萄小说</a>
+            <a href="D:\huiqi\Aresca葡萄酒.docx">葡萄生成文案</a>
+            <a href="D:\huiqi\eeyu.docx">俄语字母 ps</a>
+            <a href="D:\huiqi\eluo俄罗斯.docx">俄语三百句</a>
+            <a href="D:\huiqi\10个.docx">b站10个</a>
+            <a href="D:\huiqi\x序列装.docx">序列桩可以生成动画</a>
+            <a href="D:\huiqi\eluo俄罗斯.docx">俄语三百句</a>
+            <a href="D:\huiqi\ge.docx">了结 142 月光</a>
+            <a href="D:\huiqi\dingwei定位.docx">定位和部分编码</a>
+            <a href="D:\huiqi\392.docx">曾经的392doc</a>
+            <a href="D:\huiqi\xiaoshuo.docx">虚拟小说瞎几把高</a>
+            <a href="D:\huiqi\sd.docx">sd学习记录</a>
+            <a href="D:\huiqi\笨方法学py.docx">有mml就不需要学了</a>
+            <a href="D:\huiqi\midjourney.docx">mj没用</a>
+            <a href="D:\huiqi\重学py.docx">重学py一点</a>
+            <a href="D:\huiqi\打工效率神器.docx">打工效率神器</a>
+            <a href="D:\huiqi\ps.docx">ps笔记</a>
+            <a href="D:\huiqi\ge词.docx">歌和p的图</a>
+            <a href="D:\huiqi\vs code ps.docx">vs的ps</a>
+            <a href="D:\huiqi\wang网页开发.docx">网页开发 部分笔记</a>
+            <a href="D:\huiqi\yugu sd.docx">玉骨遥sd编码</a>
+            <a href="D:\huiqi\cad.docx">cad笔记</a>
+            <a href="D:\huiqi\总结.docx">年总结</a>
+            <a href="D:\huiqi\围棋三连星致胜法增量笔记.docx">围棋三连星致胜法增量笔记</a>
+            <a href="D:\huiqi\12月21复习.docx">三连星复习</a>
+            <a href="D:\huiqi\围棋三连星致胜法_10818506.pdf">三连星pdf</a>
+            <a href="D:\huiqi\yun云之羽.docx">云之羽歌词 批图</a>
+            <a href="D:\huiqi\ai作图.docx">作图链接大部分不能用</a>
+            <a href="D:\huiqi\900句子.docx">900句子+sd的图 大道朝天9峰</a>
+            <a href="D:\huiqi\fenxi.xls">丢给ai分析玩的装备价格</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a>
+            <a href="D:\huiqi\huiqi.docx">下的不对的地方</a>
+            <a href="D:\huiqi\新英语口语900句(提高篇).docx">900句子原版</a>
+            <a href="D:\huiqi\900句子.docx">900句子+sd的图</a>
+            <a href="D:\huiqi\900句子.docx">900句子+sd的图</a>
+            <a href="D:\huiqi\900句子.docx">900句子+sd的图</a>
+            <a href="D:\huiqi\900句子.docx">900句子+sd的图</a>
+        </p>
+        <p>
+            <a href="D:\python suc\新建文件夹\shengjingliangchan.py">平均分类</a>
+            <a href="D:\python suc\新建文件夹\ci词频有词组.et">jieba小说词频</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a>
+            <a href="D:\huiqi\danci替换.et">总的excel表</a></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>~·@ ~·@ ~·@ ~·@ ~·@ ~·@ ~·@ ~·@ ~·@ 
+    <!-- 朋友圈整体 -->
+    <div class="container">
+        <!-- 上半部分 -->
+        <div class="top">
+            <!-- 设置朋友圈背景，链接：资源-【朋友圈背景】、图片宽度：500px -->
+            <img src="http://nocturne.bczcdn.com/img/1654583569045_32863/bac.png" width="500px">
+            <!-- 设置昵称与头像：
+                1、创建一个div元素，类名为head；
+                2、在div元素中添加1个段落元素，内容为：小夜Algo；
+                3、在div元素中添加1个图片元素，链接：资源-【小夜头像】、宽度：80px。
+            -->
+            <div class="head">
+                <p>小夜Algo</p>
+                <img src="https://p6-pc-sign.douyinpic.com/tos-cn-i-0813/bdc0b621445a4090af8791c0cd0520f4~tplv-dy-aweme-images:q75.webp?biz_tag=aweme_images&from=3213915784&s=PackSourceEnum_AWEME_DETAIL&sc=image&se=false&x-expires=1712548800&x-signature=bhpKLsAq6PQuVWfV4vE7WtaxE8k%3D" alt="头像" width="80px">
+            </div>
+        </div>
+        <!-- 下半部分 -->
+        <div class="bottom"></div>
+    </div>
+        <p></p>        
+    </body>
+    </html>
