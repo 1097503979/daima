@@ -38,7 +38,7 @@ heroes = {
     "贾克斯": {"character": "随便","class":"墨之影","occupation":"护卫","cost": 1},
     "卡莎": {"character": "随便","class":"墨之影","occupation":"迅捷射手","cost": 4},
     "赛娜": {"character": "随便","class":"墨之影","occupation":"狙神","cost": 2},
-"沃利贝尔": {"character": "随便","class":"墨之影","occupation":"决斗大师","cost": 3},
+    "沃利贝尔": {"character": "随便","class":"墨之影","occupation":"决斗大师","cost": 3},
     "乌迪尔": {"character": "随便","class":("墨之影"),"occupation":("擎天卫","灵魂行者",""),"cost": 5},
     "亚托克斯": {"character": "随便","class":("墨之影","幽魂"),"occupation":"斗士","cost": 2},
     "巴德": {"character": "随便","class":"山海绘卷","occupation":"迅捷射手","cost": 3},
