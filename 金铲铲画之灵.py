@@ -78,7 +78,7 @@ def filter_heroes_by_occupation(heroes, target_occupation):
     return filtered_heroes
 
 def filter_heroes_by_cost(heroes, target_cost):
-filtered_heroes = {}
+    filtered_heroes = {}
     for hero, info in heroes.items():
         if isinstance(info["cost"], int):
             info["cost"] = [info["cost"]]
