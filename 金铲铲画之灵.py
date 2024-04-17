@@ -17,7 +17,7 @@ heroes = {
     "厄斐琉斯": {"character": "随便","class":"灵魂莲华","occupation":"狙神","cost": 2},
     "千珏": {"character": "随便","class":("灵魂莲华","永恒之森"),"occupation":"死神","cost": 2},
     "瑟提": {"character": "随便","class":"夜幽","occupation":"护卫","cost": 5},
-    "辛德拉": {"character": "随便","class":"灵魂莲华","occupation":"电子舞曲","cost": 4},
+    "辛德拉": {"character": "随便","class":"灵魂莲华","occupation":"辛德拉","cost": 4},
     "亚索": {"character": "随便","class":"灵魂莲华","occupation":"决斗大师","cost": 5},
     "安妮": {"character": "随便","class":"吉星","occupation":"神谕者","cost": 4},
     "崔丝塔娜": {"character": "随便","class":"吉星","occupation":"决斗大师","cost": 3},
